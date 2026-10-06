@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Mais Prime | Consultas e Exames Acessíveis em Sorocaba</title>
+    <meta name="description" content="Clínica médica em Sorocaba oferecendo consultas e exames com preços acessíveis e excelência no atendimento. Agende já sua consulta na Av. Ipanema.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0077b6',
+                            light: '#90e0ef',
+                            dark: '#03045e',
+                            green: '#25D366' // WhatsApp color
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-heart-pulse text-3xl text-brand-blue"></i>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-2xl text-brand-dark leading-none">SAÚDE PRIME</span>
+                        <span class="text-xs text-brand-blue font-medium">Consultas e Exames Acessíveis</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Início</a>
+                    <a href="#especialidades" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Especialidades</a>
+                    <a href="#exames" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Exames</a>
+                    <a href="#depoimentos" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Avaliações</a>
+                    <a href="https://wa.me/551521800670" target="_blank" class="bg-brand-blue hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-blue-500/30 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp mr-2"></i>Agendar Agora
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-28 pb-20 lg:pt-40 lg:pb-28 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-brand-blue text-sm font-semibold mb-6">
+                        <i class="fa-solid fa-star text-yellow-500"></i> Clínica 5 Estrelas em Sorocaba
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-dark leading-tight mb-6">
+                        Sua saúde merece o <span class="text-brand-blue">melhor cuidado</span>, sem pesar no bolso.
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        A Saúde Mais Prime traz para Sorocaba um novo conceito em medicina. Mais de 10 especialidades médicas e dezenas de exames com atendimento humanizado, agilidade e preços que você pode pagar.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://wa.me/551521800670" target="_blank" class="bg-brand-green hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg shadow-green-500/30 transition-all transform hover:-translate-y-1 flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Falar com Atendimento
+                        </a>
+                        <a href="#especialidades" class="bg-white text-brand-dark border-2 border-gray-200 hover:border-brand-blue px-8 py-4 rounded-full font-semibold text-lg transition-all flex items-center justify-center">
+                            Ver Especialidades
+                        </a>
+                    </div>
+                    <div class="mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm text-gray-500 font-medium">
+                        <span class="flex items-center"><i class="fa-solid fa-check-circle text-green-500 mr-2"></i> Sem mensalidade</span>
+                        <span class="flex items-center"><i class="fa-solid fa-check-circle text-green-500 mr-2"></i> Agendamento Rápido</span>
+                    </div>
+                </div>
+                <!-- Hero Image (Placeholder using Unsplash for demo) -->
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-0 bg-brand-blue rounded-3xl transform rotate-3 scale-105 opacity-10"></div>
+                    <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Médicos sorridentes" class="rounded-3xl shadow-2xl relative z-10 object-cover h-[500px] w-full">
+                    
+                    <!-- Floating badge -->
+                    <div class="absolute bottom-10 -left-10 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center gap-4 animate-bounce">
+                        <div class="bg-blue-100 p-3 rounded-full text-brand-blue">
+                            <i class="fa-solid fa-user-doctor text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 font-bold">Corpo Clínico</p>
+                            <p class="text-lg font-bold text-brand-dark">Especializado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow border border-gray-100">
+                    <i class="fa-solid fa-wallet text-4xl text-brand-blue mb-4"></i>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Preços Acessíveis</h3>
+                    <p class="text-gray-600">Consultas e exames de alta qualidade com valores que cabem no seu orçamento familiar.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow border border-gray-100">
+                    <i class="fa-solid fa-clock-rotate-left text-4xl text-brand-blue mb-4"></i>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Agilidade</h3>
+                    <p class="text-gray-600">Chega de meses de espera. Agendamentos rápidos para você cuidar do que importa hoje.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow border border-gray-100">
+                    <i class="fa-solid fa-hand-holding-heart text-4xl text-brand-blue mb-4"></i>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Atendimento Humanizado</h3>
+                    <p class="text-gray-600">Nossa equipe é treinada para receber você com o carinho, respeito e atenção que você merece.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades Médicas (Baseado na imagem real) -->
+    <section id="especialidades" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Especialidades Médicas</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Profissionais altamente qualificados prontos para cuidar de você e de sua família em diversas áreas da medicina.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Cards -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center group border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:bg-brand-blue transition-colors">
+                        <i class="fa-solid fa-stethoscope text-2xl text-brand-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark">Clínica Geral</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center group border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:bg-brand-blue transition-colors">
+                        <i class="fa-solid fa-heart-pulse text-2xl text-brand-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark">Cardiologia</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center group border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:bg-brand-blue transition-colors">
+                        <i class="fa-solid fa-allergies text-2xl text-brand-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark">Dermatologia</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center group border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:bg-brand-blue transition-colors">
+                        <i class="fa-solid fa-weight-scale text-2xl text-brand-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark">Endocrinologia</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center group border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:bg-brand-blue transition-colors">
+                        <i class="fa-solid fa-venus text-2xl text-brand-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark">Ginecologia</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center group border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:bg-brand-blue transition-colors">
+                        <i class="fa-solid fa-bone text-2xl text-brand-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark">Ortopedia</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center group border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:bg-brand-blue transition-colors">
+                        <i class="fa-solid fa-baby text-2xl text-brand-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark">Pediatria</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center group border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:bg-brand-blue transition-colors">
+                        <i class="fa-solid fa-brain text-2xl text-brand-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-dark">Psiquiatria</h3>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/551521800670" class="inline-flex items-center text-brand-blue font-bold hover:text-blue-800 transition-colors">
+                    Ver todas as especialidades e agendar <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exames Section -->
+    <section id="exames" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Exames de Diagnóstico Precisos e Modernos</h2>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        Equipamentos de ponta para garantir a precisão que seu diagnóstico exige, com entrega rápida de resultados.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center p-4 bg-gray-50 rounded-xl border border-gray-100">
+                            <i class="fa-solid fa-vial-circle-check text-2xl text-brand-blue w-10"></i>
+                            <span class="font-semibold text-gray-800 text-lg">Exames Laboratoriais</span>
+                        </li>
+                        <li class="flex items-center p-4 bg-gray-50 rounded-xl border border-gray-100">
+                            <i class="fa-solid fa-desktop text-2xl text-brand-blue w-10"></i>
+                            <span class="font-semibold text-gray-800 text-lg">Ultrassom</span>
+                        </li>
+                        <li class="flex items-center p-4 bg-gray-50 rounded-xl border border-gray-100">
+                            <i class="fa-solid fa-wave-square text-2xl text-brand-blue w-10"></i>
+                            <span class="font-semibold text-gray-800 text-lg">Eletrocardiograma</span>
+                        </li>
+                        <li class="flex items-center p-4 bg-gray-50 rounded-xl border border-gray-100">
+                            <i class="fa-solid fa-heart-circle-bolt text-2xl text-brand-blue w-10"></i>
+                            <span class="font-semibold text-gray-800 text-lg">MAPA e Holter</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="w-full lg:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equipamento médico" class="rounded-3xl shadow-xl w-full">
+                    <div class="absolute -bottom-6 -right-6 bg-brand-blue text-white p-6 rounded-2xl shadow-xl max-w-xs">
+                        <p class="text-2xl font-bold mb-1">+50</p>
+                        <p class="text-sm opacity-90">Tipos de exames disponíveis na mesma clínica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Avaliações -->
+    <section id="depoimentos" class="py-20 bg-brand-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">O que nossos pacientes dizem</h2>
+                <div class="flex justify-center text-yellow-400 text-2xl mb-2 gap-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-blue-200">Reconhecida com 5 estrelas em Sorocaba</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Fake Reviews para Demonstração -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <p class="text-gray-200 italic mb-6">"Fui muito bem atendida desde a recepção até a médica. Fiz meu ultrassom na hora. A estrutura é linda e os preços realmente são justos."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center font-bold text-white">MA</div>
+                        <div>
+                            <h4 class="font-bold">Maria Almeida</h4>
+                            <p class="text-xs text-blue-300">Google Review</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <p class="text-gray-200 italic mb-6">"A clínica é maravilhosa, super limpa e moderna. Agendei pelo WhatsApp bem rápido e o Dr. que me atendeu foi extremamente atencioso. Recomendo muito!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center font-bold text-white">CR</div>
+                        <div>
+                            <h4 class="font-bold">Carlos Ribeiro</h4>
+                            <p class="text-xs text-blue-300">Google Review</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <p class="text-gray-200 italic mb-6">"Levei meu filho no pediatra e amei. Não esperamos muito, ambiente super agradável. Finalmente uma clínica acessível de verdade na zona norte de Sorocaba."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center font-bold text-white">SO</div>
+                        <div>
+                            <h4 class="font-bold">Sandra Oliveira</h4>
+                            <p class="text-xs text-blue-300">Google Review</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final & Localização -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-gray-100">
+                <div class="p-10 lg:p-16 lg:w-1/2 flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-4">Pronto para cuidar da sua saúde?</h2>
+                    <p class="text-gray-600 mb-8 text-lg">Nossa equipe de especialistas está esperando por você. Entre em contato agora e garanta seu horário.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot text-brand-blue text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Localização</h4>
+                                <p class="text-gray-600">Av. Ipanema, 4000 - Jardim Novo Horizonte<br>Sorocaba - SP, 18071-801</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-phone text-brand-blue text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Telefone / WhatsApp</h4>
+                                <p class="text-gray-600">(15) 2180-0670</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/551521800670" target="_blank" class="bg-brand-green hover:bg-green-600 text-white text-center px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all transform hover:-translate-y-1 inline-block">
+                        <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Agendar pelo WhatsApp
+                    </a>
+                </div>
+                <div class="lg:w-1/2 min-h-[400px] bg-gray-200">
+                    <!-- Placeholder de Mapa Interativo (Google Maps iFrame) -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.88293933544!2d-47.4973649!3d-23.4635193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzQ4LjciUyA0N8KwMjknNTAuNSJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
+                        width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-heart-pulse text-2xl text-brand-blue"></i>
+                    <span class="font-bold text-xl text-white">SAÚDE PRIME</span>
+                </div>
+                <p class="text-sm">Consultas e Exames Acessíveis. Excelência no atendimento médico em Sorocaba, pertinho de você.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Links Rápidos</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#inicio" class="hover:text-white transition-colors">Início</a></li>
+                    <li><a href="#especialidades" class="hover:text-white transition-colors">Especialidades Médicas</a></li>
+                    <li><a href="#exames" class="hover:text-white transition-colors">Exames de Diagnóstico</a></li>
+                    <li><a href="#depoimentos" class="hover:text-white transition-colors">Avaliações</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Atendimento</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><i class="fa-solid fa-phone mr-2"></i> (15) 2180-0670</li>
+                    <li><i class="fa-solid fa-location-dot mr-2"></i> Av. Ipanema, 4000 - Sorocaba/SP</li>
+                    <li class="mt-4"><a href="https://wa.me/551521800670" class="inline-block px-4 py-2 bg-brand-blue text-white rounded hover:bg-blue-600 transition-colors">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-sm text-center">
+            <p>&copy; 2026 Saúde Mais Prime. Todos os direitos reservados. | Desenvolvido para demonstração.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
